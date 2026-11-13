@@ -1,0 +1,48 @@
+BRANDGUARD TEST CONTENT
+Paste each "TEXT" block into the Text box on the Review tab. Fill the other fields as shown.
+
+=====================================================
+TEST 1 - Many issues (expect about 14 findings)
+=====================================================
+Title: Northwind Pro launch post
+Format: Social post
+Image alt text: image
+Text colour: #F4B400
+Background colour: #FFFFFF
+Image: upload test-image.png
+
+TEXT:
+Introducing NorthWind Pro — the BEST laptop in the world!! Our revolutionary battery lasts up to 24 hours and we leverage cheap components so users save big. Founded in 2015, we offer free shipping over ₹499 and guaranteed results. Click here to utilize our launch offer.
+
+EXPECTED: wrong brand spelling, unsupported superlative, guarantee claim, hype word, double exclamation, shouting capitals, jargon (leverage/utilize), "cheap", "users", wrong battery/founding/shipping facts, weak alt text, 1.7:1 contrast, vague link text.
+
+=====================================================
+TEST 2 - Clean content (expect zero findings)
+=====================================================
+Title: Spring newsletter intro
+Format: Email
+Image alt text: Northwind Pro laptop open on a wooden desk beside a coffee cup
+Text colour: #0B3D91
+Background colour: #FFFFFF
+
+TEXT:
+Meet the Northwind Pro, built for members who work wherever ideas find them. The battery lasts up to 18 hours, and orders over ₹999 ship free. Not happy? Every purchase includes 30-day returns. View the pricing details on our website.
+
+=====================================================
+TEST 3 - Facts only (expect 3 high-severity fact findings)
+=====================================================
+Title: About us blurb
+Format: Web page
+
+TEXT:
+Northwind was founded in 2010. Enjoy free shipping above ₹1,500 and a 60-day money-back window on every order.
+
+=====================================================
+WORKFLOW TEST
+=====================================================
+1. As Asha (Creator): load Test 1, click Run brand check, apply a few fixes, dismiss one, Save draft, Submit for review.
+2. Switch to Asha again: note she cannot approve her own post.
+3. Switch to Meera (Reviewer): open it from the Queue tab, add a comment, then Request changes.
+4. Back as Asha: fix remaining issues, resubmit.
+5. As Ravi (Manager): approve. Try approving with high issues open to see the override prompt.
+6. Check the Insights tab.
