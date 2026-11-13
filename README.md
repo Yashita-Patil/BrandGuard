@@ -91,13 +91,6 @@ Compliance findings always come from the deterministic rule engine. Optional rew
 
 Fonts are bundled via `next/font`.
 
-## Data and demo limitations
-
-- The demo stores application state in browser `localStorage`; it does not use a production database.
-- The included roles demonstrate the workflow and do not provide real user authentication or production-grade permissions.
-- Initial sample content and demonstration records may appear in the workspace and analytics. Analytics should be interpreted in the context of the data currently stored in the browser.
-- Alt-text checks evaluate the available text metadata; they are not a full visual or computer-vision assessment of image content.
-- Do not treat the demo as the only compliance or approval control for live publication.
 
 ## Useful commands
 
